@@ -7,8 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4FF3220A29267AB900372FDD /* family_letter_iosApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FF3220929267AB900372FDD /* family_letter_iosApp.swift */; };
-		4FF3220C29267AB900372FDD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FF3220B29267AB900372FDD /* ContentView.swift */; };
+		4F3BDB09292A1DD500B96625 /* MainScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F3BDB08292A1DD500B96625 /* MainScene.swift */; };
+		4F3BDB0B292A1DE600B96625 /* HistoryScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F3BDB0A292A1DE600B96625 /* HistoryScene.swift */; };
+		4F3BDB0D292A1DF200B96625 /* CalendarScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F3BDB0C292A1DF200B96625 /* CalendarScene.swift */; };
+		4F3BDB0F292A1E0100B96625 /* SettingScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F3BDB0E292A1E0100B96625 /* SettingScene.swift */; };
+		4FF3220A29267AB900372FDD /* FamilyLetterApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FF3220929267AB900372FDD /* FamilyLetterApp.swift */; };
+		4FF3220C29267AB900372FDD /* FamilyLetterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FF3220B29267AB900372FDD /* FamilyLetterView.swift */; };
 		4FF3220E29267ABA00372FDD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4FF3220D29267ABA00372FDD /* Assets.xcassets */; };
 		4FF3221129267ABA00372FDD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4FF3221029267ABA00372FDD /* Preview Assets.xcassets */; };
 		4FF3221B29267ABB00372FDD /* family_letter_iosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FF3221A29267ABB00372FDD /* family_letter_iosTests.swift */; };
@@ -34,9 +38,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4F3BDB08292A1DD500B96625 /* MainScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScene.swift; sourceTree = "<group>"; };
+		4F3BDB0A292A1DE600B96625 /* HistoryScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryScene.swift; sourceTree = "<group>"; };
+		4F3BDB0C292A1DF200B96625 /* CalendarScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarScene.swift; sourceTree = "<group>"; };
+		4F3BDB0E292A1E0100B96625 /* SettingScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingScene.swift; sourceTree = "<group>"; };
 		4FF3220629267AB900372FDD /* family-letter-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "family-letter-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		4FF3220929267AB900372FDD /* family_letter_iosApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = family_letter_iosApp.swift; sourceTree = "<group>"; };
-		4FF3220B29267AB900372FDD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		4FF3220929267AB900372FDD /* FamilyLetterApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FamilyLetterApp.swift; sourceTree = "<group>"; };
+		4FF3220B29267AB900372FDD /* FamilyLetterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FamilyLetterView.swift; sourceTree = "<group>"; };
 		4FF3220D29267ABA00372FDD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4FF3221029267ABA00372FDD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		4FF3221629267ABB00372FDD /* family-letter-iosTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "family-letter-iosTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -71,6 +79,27 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4F3BDB07292A1DC400B96625 /* scenes */ = {
+			isa = PBXGroup;
+			children = (
+				4F3BDB08292A1DD500B96625 /* MainScene.swift */,
+				4F3BDB0A292A1DE600B96625 /* HistoryScene.swift */,
+				4F3BDB0C292A1DF200B96625 /* CalendarScene.swift */,
+				4F3BDB0E292A1E0100B96625 /* SettingScene.swift */,
+			);
+			path = scenes;
+			sourceTree = "<group>";
+		};
+		4FC482DF292A118300844151 /* views */ = {
+			isa = PBXGroup;
+			children = (
+				4F3BDB07292A1DC400B96625 /* scenes */,
+				4FF3220929267AB900372FDD /* FamilyLetterApp.swift */,
+				4FF3220B29267AB900372FDD /* FamilyLetterView.swift */,
+			);
+			path = views;
+			sourceTree = "<group>";
+		};
 		4FF321FD29267AB900372FDD = {
 			isa = PBXGroup;
 			children = (
@@ -94,8 +123,7 @@
 		4FF3220829267AB900372FDD /* family-letter-ios */ = {
 			isa = PBXGroup;
 			children = (
-				4FF3220929267AB900372FDD /* family_letter_iosApp.swift */,
-				4FF3220B29267AB900372FDD /* ContentView.swift */,
+				4FC482DF292A118300844151 /* views */,
 				4FF3220D29267ABA00372FDD /* Assets.xcassets */,
 				4FF3220F29267ABA00372FDD /* Preview Content */,
 			);
@@ -257,8 +285,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4FF3220C29267AB900372FDD /* ContentView.swift in Sources */,
-				4FF3220A29267AB900372FDD /* family_letter_iosApp.swift in Sources */,
+				4F3BDB0B292A1DE600B96625 /* HistoryScene.swift in Sources */,
+				4F3BDB0F292A1E0100B96625 /* SettingScene.swift in Sources */,
+				4FF3220C29267AB900372FDD /* FamilyLetterView.swift in Sources */,
+				4F3BDB09292A1DD500B96625 /* MainScene.swift in Sources */,
+				4F3BDB0D292A1DF200B96625 /* CalendarScene.swift in Sources */,
+				4FF3220A29267AB900372FDD /* FamilyLetterApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
