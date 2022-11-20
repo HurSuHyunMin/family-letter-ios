@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		4F3BDB09292A1DD500B96625 /* MainScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F3BDB08292A1DD500B96625 /* MainScene.swift */; };
 		4F3BDB0B292A1DE600B96625 /* HistoryScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F3BDB0A292A1DE600B96625 /* HistoryScene.swift */; };
-		4F3BDB0D292A1DF200B96625 /* CalendarScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F3BDB0C292A1DF200B96625 /* CalendarScene.swift */; };
+		4F3BDB0D292A1DF200B96625 /* AlbumScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F3BDB0C292A1DF200B96625 /* AlbumScene.swift */; };
 		4F3BDB0F292A1E0100B96625 /* SettingScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F3BDB0E292A1E0100B96625 /* SettingScene.swift */; };
 		4FF3220A29267AB900372FDD /* FamilyLetterApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FF3220929267AB900372FDD /* FamilyLetterApp.swift */; };
 		4FF3220C29267AB900372FDD /* FamilyLetterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FF3220B29267AB900372FDD /* FamilyLetterView.swift */; };
@@ -40,7 +40,7 @@
 /* Begin PBXFileReference section */
 		4F3BDB08292A1DD500B96625 /* MainScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScene.swift; sourceTree = "<group>"; };
 		4F3BDB0A292A1DE600B96625 /* HistoryScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryScene.swift; sourceTree = "<group>"; };
-		4F3BDB0C292A1DF200B96625 /* CalendarScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarScene.swift; sourceTree = "<group>"; };
+		4F3BDB0C292A1DF200B96625 /* AlbumScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumScene.swift; sourceTree = "<group>"; };
 		4F3BDB0E292A1E0100B96625 /* SettingScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingScene.swift; sourceTree = "<group>"; };
 		4FF3220629267AB900372FDD /* family-letter-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "family-letter-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4FF3220929267AB900372FDD /* FamilyLetterApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FamilyLetterApp.swift; sourceTree = "<group>"; };
@@ -84,7 +84,7 @@
 			children = (
 				4F3BDB08292A1DD500B96625 /* MainScene.swift */,
 				4F3BDB0A292A1DE600B96625 /* HistoryScene.swift */,
-				4F3BDB0C292A1DF200B96625 /* CalendarScene.swift */,
+				4F3BDB0C292A1DF200B96625 /* AlbumScene.swift */,
 				4F3BDB0E292A1E0100B96625 /* SettingScene.swift */,
 			);
 			path = scenes;
@@ -289,7 +289,7 @@
 				4F3BDB0F292A1E0100B96625 /* SettingScene.swift in Sources */,
 				4FF3220C29267AB900372FDD /* FamilyLetterView.swift in Sources */,
 				4F3BDB09292A1DD500B96625 /* MainScene.swift in Sources */,
-				4F3BDB0D292A1DF200B96625 /* CalendarScene.swift in Sources */,
+				4F3BDB0D292A1DF200B96625 /* AlbumScene.swift in Sources */,
 				4FF3220A29267AB900372FDD /* FamilyLetterApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

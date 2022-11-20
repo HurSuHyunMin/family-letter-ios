@@ -1,5 +1,5 @@
 //
-//  CalendarScene.swift
+//  AlbumScene.swift
 //  family-letter-ios
 //
 //  Created by 우현민 on 2022/11/20.
@@ -7,16 +7,16 @@
 
 import SwiftUI
 
-struct CalendarScene: View {
+struct AlbumScene: View {
     var body: some View {
-        Text("달력")
+        Text("사진 공유")
     }
 }
 
-struct CalendarScene_Previews: PreviewProvider {
+struct AlbumScene_Previews: PreviewProvider {
     static var previews: some View {
         TabView {
-            CalendarScene()
+            AlbumScene()
         }
     }
 }
