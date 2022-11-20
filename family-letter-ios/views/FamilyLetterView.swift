@@ -20,9 +20,9 @@ struct FamilyLetterView: View {
                     Text("기록")
                 }
             
-            CalendarScene()
+            AlbumScene()
                 .tabItem{
-                    Text("일정")
+                    Text("사진")
                 }
             
             SettingScene()
