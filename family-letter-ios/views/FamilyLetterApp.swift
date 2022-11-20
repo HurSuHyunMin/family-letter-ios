@@ -8,10 +8,10 @@
 import SwiftUI
 
 @main
-struct family_letter_iosApp: App {
+struct FamilyLetterApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            FamilyLetterView()
         }
     }
 }
