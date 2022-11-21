@@ -8,8 +8,10 @@
 import SwiftUI
 
 struct SettingScene: View {
+    let webViewService = WebViewService()
+    
     var body: some View {
-        Text("세팅")
+        SingleWebView(url: URL(string: webViewService.getSettingWebViewUrl())!)
     }
 }
 

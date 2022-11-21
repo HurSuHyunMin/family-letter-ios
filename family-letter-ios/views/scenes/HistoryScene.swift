@@ -8,8 +8,10 @@
 import SwiftUI
 
 struct HistoryScene: View {
+    let webViewService = WebViewService()
+    
     var body: some View {
-        Text("기록")
+        SingleWebView(url: URL(string: webViewService.getHistoryWebViewUrl())!)
     }
 }
 

@@ -11,6 +11,9 @@
 		4F3BDB0B292A1DE600B96625 /* HistoryScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F3BDB0A292A1DE600B96625 /* HistoryScene.swift */; };
 		4F3BDB0D292A1DF200B96625 /* AlbumScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F3BDB0C292A1DF200B96625 /* AlbumScene.swift */; };
 		4F3BDB0F292A1E0100B96625 /* SettingScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F3BDB0E292A1E0100B96625 /* SettingScene.swift */; };
+		4FDBF133292BAA96004B8D62 /* SingleWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FDBF132292BAA96004B8D62 /* SingleWebView.swift */; };
+		4FDBF135292BAAE6004B8D62 /* WebViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FDBF134292BAAE6004B8D62 /* WebViewProtocol.swift */; };
+		4FDBF139292BBA2E004B8D62 /* WebViewService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FDBF138292BBA2E004B8D62 /* WebViewService.swift */; };
 		4FF3220A29267AB900372FDD /* FamilyLetterApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FF3220929267AB900372FDD /* FamilyLetterApp.swift */; };
 		4FF3220C29267AB900372FDD /* FamilyLetterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FF3220B29267AB900372FDD /* FamilyLetterView.swift */; };
 		4FF3220E29267ABA00372FDD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4FF3220D29267ABA00372FDD /* Assets.xcassets */; };
@@ -42,6 +45,10 @@
 		4F3BDB0A292A1DE600B96625 /* HistoryScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryScene.swift; sourceTree = "<group>"; };
 		4F3BDB0C292A1DF200B96625 /* AlbumScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumScene.swift; sourceTree = "<group>"; };
 		4F3BDB0E292A1E0100B96625 /* SettingScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingScene.swift; sourceTree = "<group>"; };
+		4FDBF12F292BA8DF004B8D62 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		4FDBF132292BAA96004B8D62 /* SingleWebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleWebView.swift; sourceTree = "<group>"; };
+		4FDBF134292BAAE6004B8D62 /* WebViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewProtocol.swift; sourceTree = "<group>"; };
+		4FDBF138292BBA2E004B8D62 /* WebViewService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewService.swift; sourceTree = "<group>"; };
 		4FF3220629267AB900372FDD /* family-letter-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "family-letter-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4FF3220929267AB900372FDD /* FamilyLetterApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FamilyLetterApp.swift; sourceTree = "<group>"; };
 		4FF3220B29267AB900372FDD /* FamilyLetterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FamilyLetterView.swift; sourceTree = "<group>"; };
@@ -93,11 +100,44 @@
 		4FC482DF292A118300844151 /* views */ = {
 			isa = PBXGroup;
 			children = (
+				4FDBF131292BAA44004B8D62 /* components */,
 				4F3BDB07292A1DC400B96625 /* scenes */,
 				4FF3220929267AB900372FDD /* FamilyLetterApp.swift */,
 				4FF3220B29267AB900372FDD /* FamilyLetterView.swift */,
 			);
 			path = views;
+			sourceTree = "<group>";
+		};
+		4FDBF130292BAA38004B8D62 /* webviews */ = {
+			isa = PBXGroup;
+			children = (
+				4FDBF132292BAA96004B8D62 /* SingleWebView.swift */,
+				4FDBF134292BAAE6004B8D62 /* WebViewProtocol.swift */,
+			);
+			path = webviews;
+			sourceTree = "<group>";
+		};
+		4FDBF131292BAA44004B8D62 /* components */ = {
+			isa = PBXGroup;
+			children = (
+				4FDBF130292BAA38004B8D62 /* webviews */,
+			);
+			path = components;
+			sourceTree = "<group>";
+		};
+		4FDBF136292BB9D4004B8D62 /* repositories */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = repositories;
+			sourceTree = "<group>";
+		};
+		4FDBF137292BBA1C004B8D62 /* services */ = {
+			isa = PBXGroup;
+			children = (
+				4FDBF138292BBA2E004B8D62 /* WebViewService.swift */,
+			);
+			path = services;
 			sourceTree = "<group>";
 		};
 		4FF321FD29267AB900372FDD = {
@@ -123,6 +163,9 @@
 		4FF3220829267AB900372FDD /* family-letter-ios */ = {
 			isa = PBXGroup;
 			children = (
+				4FDBF137292BBA1C004B8D62 /* services */,
+				4FDBF136292BB9D4004B8D62 /* repositories */,
+				4FDBF12F292BA8DF004B8D62 /* Info.plist */,
 				4FC482DF292A118300844151 /* views */,
 				4FF3220D29267ABA00372FDD /* Assets.xcassets */,
 				4FF3220F29267ABA00372FDD /* Preview Content */,
@@ -286,11 +329,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				4F3BDB0B292A1DE600B96625 /* HistoryScene.swift in Sources */,
+				4FDBF133292BAA96004B8D62 /* SingleWebView.swift in Sources */,
 				4F3BDB0F292A1E0100B96625 /* SettingScene.swift in Sources */,
+				4FDBF135292BAAE6004B8D62 /* WebViewProtocol.swift in Sources */,
 				4FF3220C29267AB900372FDD /* FamilyLetterView.swift in Sources */,
 				4F3BDB09292A1DD500B96625 /* MainScene.swift in Sources */,
 				4F3BDB0D292A1DF200B96625 /* AlbumScene.swift in Sources */,
 				4FF3220A29267AB900372FDD /* FamilyLetterApp.swift in Sources */,
+				4FDBF139292BBA2E004B8D62 /* WebViewService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -451,6 +497,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"family-letter-ios/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "family-letter-ios/Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -479,6 +526,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"family-letter-ios/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "family-letter-ios/Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

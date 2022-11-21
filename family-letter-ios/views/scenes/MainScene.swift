@@ -8,8 +8,10 @@
 import SwiftUI
 
 struct MainScene: View {
+    let webViewService = WebViewService()
+    
     var body: some View {
-        Text("메인입니다")
+        SingleWebView(url: URL(string: webViewService.getMainWebViewUrl())!)
     }
 }
 
