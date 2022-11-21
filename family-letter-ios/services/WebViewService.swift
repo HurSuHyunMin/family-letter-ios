@@ -16,18 +16,18 @@ protocol WebViewServiceProtocol {
 
 struct WebViewService: WebViewServiceProtocol {
     func getMainWebViewUrl() -> String {
-        return "https://family-letter-webview.vercel.app/main"
+        return "https://family-letter-webview.vercel.app/tabs/main"
     }
 
     func getHistoryWebViewUrl() -> String {
-        return "https://family-letter-webview.vercel.app/history"
+        return "https://family-letter-webview.vercel.app/tabs/history"
     }
     
     func getAlbumWebViewUrl() -> String {
-        return "https://family-letter-webview.vercel.app/album"
+        return "https://family-letter-webview.vercel.app/tabs/album"
     }
     
     func getSettingWebViewUrl() -> String {
-        return "https://family-letter-webview.vercel.app/setting"
+        return "https://family-letter-webview.vercel.app/tabs/setting"
     }
 }
