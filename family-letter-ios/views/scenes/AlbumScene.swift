@@ -8,8 +8,10 @@
 import SwiftUI
 
 struct AlbumScene: View {
+    let webViewService = WebViewService()
+    
     var body: some View {
-        Text("사진 공유")
+        SingleWebView(url: URL(string: webViewService.getAlbumWebViewUrl())!)
     }
 }
 
